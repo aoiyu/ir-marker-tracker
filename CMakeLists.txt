@@ -3,7 +3,7 @@ project(ir_marker_tracker)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(OpenCV_DIR lib/opencv-4.6.0/build)
+set(OpenCV_DIR lib/opencv/build)
 find_package(OpenCV REQUIRED)
 
 add_executable(ir_marker_tracker src/main.cpp)
