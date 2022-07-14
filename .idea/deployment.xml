@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Jetson (8275ae63-d47f-4288-ae06-a46e318e9011)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ir-marker-tracker" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-jetson" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-jetson" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
