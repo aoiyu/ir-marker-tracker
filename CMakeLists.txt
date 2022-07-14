@@ -20,7 +20,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 set(OpenCV_DIR lib/opencv/build)
 find_package(OpenCV)
 
-add_executable(ir_marker_tracker src/main.cpp)
+add_executable(ir_marker_tracker src/main.cpp src/CameraThread.cpp src/CameraThread.h)
 
 if(OpenCV_FOUND)
     target_link_libraries(ir_marker_tracker ${OpenCV_LIBS})
