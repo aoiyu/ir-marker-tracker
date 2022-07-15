@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.22)
 project(ir_marker_tracker)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -pthread")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 #set(OPENCV_EXTRA_MODULES_PATH ../opencv_contrib/modules)
@@ -18,7 +21,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 #include_directories(${OpenCV_INCLUDE_DIRS})
 
 set(OpenCV_DIR lib/opencv/build)
-find_package(OpenCV)
+find_package(OpenCV REQUIRED)
 
 add_executable(ir_marker_tracker src/main.cpp src/CameraThread.cpp src/CameraThread.h)
 
